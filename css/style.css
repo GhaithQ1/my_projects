@@ -284,7 +284,16 @@ nav .content .test p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    position: relative;
 }
+@media(max-width:767px){
+    .main .container{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+}
+
+
 
 .main .container .test_imag img {
     max-width: 100%;
