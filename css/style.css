@@ -125,6 +125,7 @@ nav .content {
 @media(max-width:991px) {
     nav .content {
         margin-left: 10px;
+        text-align: center;
     }
 }
 
@@ -379,6 +380,11 @@ box-shadow: 0 0 20px 0px black;
 @media(max-width:767px){
     .main h2{
         font-size: 60px;
+    }
+}
+@media(max-width:991px){
+    .main h2{
+        font-size: 100px;
     }
 }
 
