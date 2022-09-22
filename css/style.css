@@ -13,6 +13,8 @@ header {
     height: 100vh;
     position: relative;
     z-index: 1;
+        box-shadow: 0px 0px 20px 0px black;
+
 }
 
 header::before {
@@ -48,15 +50,10 @@ header .text h2 {
 }
 
 header .text h2 span {
-    color: #06181a;
+    color: #e91e63;
     font-size: 50px;
 }
 
-@media(max-width:991px) {
-    header .text h2 span {
-        color: #575757;
-    }
-}
 
 header .text ul {
     display: flex;
@@ -142,6 +139,13 @@ nav .content h1 {
     animation: move 10s linear infinite;
     -webkit-animation: move 20s linear infinite;
 
+}
+
+nav .content h2{
+        font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #e91e63;
 }
 
 @media(max-width:991px) {
@@ -236,44 +240,10 @@ nav .content .test p {
 }
 
 
-.icon {
-    position: absolute;
-    right: 5%;
-    bottom: 8%;
-}
-
-@media(max-width:991px) {
-    .icon {
-        position: absolute;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        bottom: 10px;
-    }
-}
-
-.icon img {
-    width: 30px;
-    display: block;
-    margin: 20px 0 0 0;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    cursor: pointer;
-}
-
-.icon img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
 
 .main {
     padding: 100px 0;
+    background-color: #001011;
 }
 
 .main .container {
@@ -283,7 +253,7 @@ nav .content .test p {
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 40px;
     position: relative;
 }
 @media(max-width:767px){
@@ -292,316 +262,170 @@ nav .content .test p {
     padding-right: 10px;
     }
 }
-
-
-
-.main .container .test_imag img {
+.main .test_imag{
+box-shadow: 0 0 20px 0px black;
+    border-radius: 10px;
+}
+.main .test_imag a{
+    display: grid;
+}
+.main .test_imag img{
     max-width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.main .container .test_imag {
-    box-shadow: 0 0 20px 0 #ddd;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.main .test_imag{
     position: relative;
-    z-index: 1;
+}
+.main .test_imag .img{
+    position: relative;
+}
+.main .test1 .img1::before,
+.main .test2 .img2::before,
+.main .test3 .img3::before,
+.main .test4 .img4::before,
+.main .test5 .img5::before {
+    content: "";
+    width: 0;
+    height: 100% ;
+    background-color: #50505091;
+    border-radius: 10px  ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+    -webkit-border-radius: 10px  ;
+    -moz-border-radius: 10px  ;
+    -ms-border-radius: 10px  ;
+    -o-border-radius: 10px  ;
+}
+.main .test1 .img1::before{
+    background-color:#50505091 ;
+}
+.main .test2 .img2::before{
+    background-color:rgb(0 188 212 / 50%) ;
+}
+.main .test3 .img3::before{
+    background-color:rgb(233 30 99 / 50%) ;
+}
+.main .test4 .img4::before{
+    background-color:rgb(18 144 184 / 50%) ;
+}
+.main .test5 .img5::before{
+    background-color:rgb(10 78 10 / 50%) ;
 }
 
-.main .test_imag h2 {
+.main .test1 .img1:hover::before,
+.main .test2 .img2:hover::before,
+.main .test3 .img3:hover::before,
+.main .test4 .img4:hover::before,
+.main .test5 .img5:hover::before{
+    width: 100%;
+
+}
+.main .img button{
+        color: white;
+        font-size: 33px;
+        background: none;
+        width: 100%;
+        padding: 70px 0;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+.main .img:hover button{
+    opacity: 1;
+}
+
+.main h2{
     text-align: center;
-    font-size: 27px;
+    font-size: 130px;
+    padding: 0 0 80px;
+    font-weight: 900;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    background-image: url(../images/back.png);
+    -webkit-background-clip: text;
+    animation: move1 20s linear infinite;
+    -webkit-animation: move1 20s linear infinite;
+}
+@media(max-width:767px){
+    .main h2{
+        font-size: 60px;
+    }
+}
+
+@keyframes move1 {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+
+footer{
+  background: linear-gradient(to right, #161b22, #001011);
+    padding:20px 0 10px;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+
+
+footer p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+footer p span{
+        color: #e91e63;
     font-weight: bold;
-    padding: 10px 0;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    text-transform:capitalize;
 }
 
-.main .test_imag p {
+footer .icon{
     text-align: center;
-    font-size: 15px;
-    padding: 0 5px 20px;
-    color: black;
-    line-height: 1.6;
+}
+footer .icon img{
+    width: 30px;
+    margin: 5px 50px 0;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
-}
-
-.main .test1 h2 {
-    color: #595959;
-}
-
-.main .test2 h2 {
-    color: #00bcd4;
-}
-
-.main .test3 h2 {
-    color: #e91e63;
-}
-
-.main .test4 h2 {
-    color: #067fbb;
-}
-
-.main .test5 h2 {
-    color: #2b9348;
-}
-
-.main .test1:hover h2,
-.main .test2:hover h2,
-.main .test3:hover h2,
-.main .test4:hover h2,
-.main .test5:hover h2 {
-    color: white;
-}
-
-.main .test_imag:hover p {
-    color: white;
-}
-
-
-
-.main .test1::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: #595959;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.main .test1:hover::before {
-    width: 100%;
-    height: 100%;
-}
-
-.main .test2::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: #00bcd4;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.main .test2:hover::before {
-    width: 100%;
-    height: 100%;
-}
-
-.main .test3::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: #e91e63;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.main .test3:hover::before {
-    width: 100%;
-    height: 100%;
-}
-
-.main .test4::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: #067fbb;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.main .test4:hover::before {
-    width: 100%;
-    height: 100%;
-}
-
-.main .test5::before {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: #2b9348;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.main .test5:hover::before {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.main .test_imag button {
-    padding: 10px 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    margin: 20px auto;
-    display: block;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    background: none;
     cursor: pointer;
 }
-
-.main .test_imag button a {
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-
-
-
-
-.main .test1 button {
-    border: 2px solid #595959;
-}
-
-.main .test2 button {
-    border: 2px solid #00bcd4;
-}
-
-.main .test3 button {
-    border: 2px solid #e91e63;
-}
-
-.main .test4 button {
-    border: 2px solid #067fbb;
-}
-
-.main .test5 button {
-    border: 2px solid #2b9348;
-}
-
-.main .test1:hover button {
-    background-color: #595959;
-    border: 2px solid white;
-}
-
-.main .test2:hover button {
-    background-color: #00bcd4;
-    border: 2px solid white;
-}
-
-.main .test3:hover button {
-    background-color: #e91e63;
-    border: 2px solid white;
-}
-
-.main .test4:hover button {
-    background-color: #067fbb;
-    border: 2px solid white;
-}
-
-.main .test5:hover button {
-    background-color: #2b9348;
-    border: 2px solid white;
-}
-
-.main .test1:hover a,
-.main .test2:hover a,
-.main .test3:hover a,
-.main .test4:hover a,
-.main .test4:hover a {
-    color: white;
+footer .icon img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
