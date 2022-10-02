@@ -288,7 +288,8 @@ box-shadow: 0 0 20px 0px black;
 .main .test2 .img2::before,
 .main .test3 .img3::before,
 .main .test4 .img4::before,
-.main .test5 .img5::before {
+.main .test5 .img5::before,
+.main .test6 .img6::before {
     content: "";
     width: 0;
     height: 100% ;
@@ -314,13 +315,13 @@ box-shadow: 0 0 20px 0px black;
     -o-border-radius: 10px  ;
 }
 .main .test1 .img1::before{
-    background-color:#50505091 ;
+    background-color:#a5a3a391 ;
 }
 .main .test2 .img2::before{
     background-color:rgb(7 12 76 / 50%) ;
 }
 .main .test3 .img3::before{
-    background-color:rgb(233 30 99 / 50%) ;
+    background-color:#a5a3a391 ;
 }
 .main .test4 .img4::before{
     background-color:rgb(1 8 52 / 50%) ;
@@ -328,12 +329,16 @@ box-shadow: 0 0 20px 0px black;
 .main .test5 .img5::before{
     background-color:rgb(10 78 10 / 50%) ;
 }
+.main .test6 .img6::before{
+    background-color:rgb(43 9 42 / 50%) ;
+}
 
 .main .test1 .img1:hover::before,
 .main .test2 .img2:hover::before,
 .main .test3 .img3:hover::before,
 .main .test4 .img4:hover::before,
-.main .test5 .img5:hover::before{
+.main .test5 .img5:hover::before,
+.main .test6 .img6:hover::before{
     width: 100%;
 
 }
@@ -363,6 +368,7 @@ box-shadow: 0 0 20px 0px black;
 .main .img:hover button{
     opacity: 1;
 }
+
 
 .main h2{
     text-align: center;
